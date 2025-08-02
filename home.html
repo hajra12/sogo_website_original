@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Norway Culture Site</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -105,9 +106,58 @@
     </div>
   </div>
 </div>
-
 <div class="toast" id="toast">oversettelse…</div>
-      <div class="card"><img src="village.png" alt="Volunteers"><h3>Den norske dugnadsånden</h3><p>The Norwegian spirit of voluntary work</p></div>
+      <div class="card" onclick="showDialog2()"><img src="village.png" alt="Volunteers"><h3>Den norske dugnadsånden</h3><p>The Norwegian spirit of voluntary work</p></div>
+     <div id="overlay2" class="overlay-2"></div>
+      <div class="dialog-2" id="storyDialog2">
+  <audio id="storyAudio2" src="video2.mp3" preload="metadata"></audio>
+<button class="dialog-close-2"  onclick="closeDialog2()">×</button>
+  <p id="storyText2">
+<span>Hyttekulturen i Norge er en viktig del av det norske livet.</span>
+<span>Mange nordmenn har en hytte, som er et lite hus i naturen.</span>
+<span>Hytter kan være på fjellet, ved sjøen, i skogen eller på øyer.</span>
+<span>Hytter kan være gamle eller nye, store eller små, enkle eller luksuriøse.</span>
+<span>Ordet “hytte” kommer fra det gamle norrøne ordet “hýtti”, som betyr “lite hus”.</span>
+<span>Det første beviset på at nordmenn hadde hytter er fra 1100-tallet.</span>
+<span>Da var hyttene brukt av bønder, jegere og fiskere.</span>
+<span>Senere ble hyttene brukt av kunstnere, forfattere og kongelige.</span>
+<span>I dag har nesten 400 000 nordmenn en hytte.</span>
+<span>Nordmenn liker å dra på hyttetur for å slappe av, kose seg og være ute.</span>
+<span>De drar ofte på hyttetur på fredager, og blir der til søndag.</span>
+<span>Mange nordmenn kaller det for “fredagsturen”.</span>
+<span>På kontoret er det dermed veldig få som kommer på jobb på fredager,</span>
+<span>ellers slutter de fleste nordmenn tidligere, slik at de slipper å stå i kø på vei til hytta.</span>
+<span>De drar også på hyttetur i høytider som påske, jul og 17. mai.</span>
+<span>De drar på hyttetur både sommer og vinter.</span>
+<span>Når nordmenn er på hyttetur, gjør de mange forskjellige aktiviteter.</span>
+<span>De går på tur i naturen, fisker, bader, sykler, spiller spill, leser bøker og lager mat.</span>
+<span>Typisk turmat på hytta er for eksempel kvikklunsj, klementiner, brødskiver med ost og skinke, pølser etc.</span>
+<span>Hyttekulturen i Norge er sentral fordi den viser hvordan nordmenn elsker naturen og familien sin.</span>
+<span>Hytta er et sted der nordmenn kan være seg selv, og ha det gøy sammen.</span>
+<span>Hytta er et symbol på det norske folket og deres verdier.</span>
+<span>I Norge er det mange fjell og vakker natur, så hyttene gir en mulig mulighet til å nyte dette.</span>
+
+  </p>
+
+  <div class="controls-2">
+    <button class="play-btn-2"  onclick="playStory2()">▶ Play</button>
+    <button class="pause-btn-2" onclick="pauseStory2()">⏸ Pause</button>
+    <button class="vocab-btn-2" onclick="startVocabMode2()">Flash‑Cards</button>
+    <button class="word-btn-2"  id="wordModeBtn2" onclick="toggleWordMode2()">Word Translation Mode</button>
+  </div>
+
+  <div class="flashcard-2" id="flashcard2">
+    <div class="flashcard-content-2" id="flashcardContent2" onclick="revealMeaning2()">...</div>
+    <div>
+      <button class="arrow-btn-2" onclick="prevWord2()">⬅</button>
+      <button class="arrow-btn-2" onclick="nextWord2()">➡</button>
+      <button class="flash-exit-btn-2" onclick="closeFlashcard2()">✖ Close</button>
+
+    </div>
+  </div>
+</div>
+      
+<div class="toast" id="toast2">oversettelse…</div>
       <div class="card"><img src="home.png" alt="House Purchase"><h3>Mitt første boligkjøp</h3><p>My house purchase</p></div>
     </div>
   </section>
@@ -160,5 +210,7 @@
 </html>
 
 <script src="script.js"></script>
+
+<script src="script2.js"></script>
 </body>
 </html>

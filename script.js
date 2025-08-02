@@ -376,6 +376,7 @@ function closeFlashcard(){
   flashcard.style.display='none';
 }
 
+
 /**************  MODAL  ****************/ 
 function showDialog(){document.getElementById('overlay').style.display='block';document.getElementById('storyDialog').style.display='block'}
 function closeDialog(){
