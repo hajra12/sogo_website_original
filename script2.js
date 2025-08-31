@@ -1,260 +1,316 @@
 
 
-const translations2 = [
-  "The cabin culture in Norway is an important part of Norwegian life.",
-  "Many Norwegians have a cabin, which is a small house in nature.",
-  "Cabins can be in the mountains, by the sea, in the forest, or on islands.",
-  "Cabins can be old or new, large or small, simple or luxurious.",
-  "The word 'hytte' comes from the old Norse word 'hýtti', which means 'small house'.",
-  "The first evidence that Norwegians had cabins is from the 1100s.",
-  "Back then, cabins were used by farmers, hunters, and fishermen.",
-  "Later, the cabins were used by artists, writers, and royalty.",
-  "Today, nearly 400,000 Norwegians have a cabin.",
-  "Norwegians like to go on cabin trips to relax, enjoy themselves, and be outdoors.",
-  "They often go on cabin trips on Fridays and stay until Sunday. Many Norwegians call it the 'Friday trip'.",
-  "At the office, very few people come to work on Fridays, or most Norwegians leave early so they can avoid traffic on the way to the cabin.",
-  "They also go on cabin trips during holidays such as Easter, Christmas, and May 17th.",
-  "They go on cabin trips in both summer and winter.",
-  "When Norwegians are on a cabin trip, they do many different activities.",
-  "They go hiking in nature, fish, swim, bike, play games, read books, and cook food.",
-  "Typical hiking food at the cabin includes for example Kvikk Lunsj, clementines, sandwiches with cheese and ham, sausages, etc.",
-  "The cabin culture in Norway is central because it shows how Norwegians love nature and their families.",
-  "The cabin is a place where Norwegians can be themselves and have fun together.",
-  "The cabin is a symbol of the Norwegian people and their values.",
-  "In Norway, there are many mountains and beautiful nature, so the cabins provide an opportunity to enjoy this."
+const translations4 = [
+  "Kong Olav V ble født 2. juli 1903 i Storbritannia som prins Alexander Edward Christian Frederik.",
+"Han flyttet til Norge med familien i 1905 da faren hans, Haakon VII, ble konge av Norge.",
+"Alexander fikk navnet Olav V da han ble kronprins, og vokste opp i Norge.",
+
+"Under andre verdenskrig måtte kongefamilien flykte fra Norge da Tyskland invaderte landet i 1940.",
+"Kongefamilien og regjeringen var i eksil i Storbritannia.",
+"Mens han var i England, fortsatte Olav V å kjempe for å frigjøre Norge sammen med sin far.",
+"Han ble en viktig leder og inspirerte mange nordmenn under krigen.",
+
+"Olav V ble konge i 1957 etter farens død.",
+"Han var en populær konge som ble kjent som \"Folkekongen\".",
+"Hans ydmykhet og nærhet til folket gjorde ham elsket av mange.",
+"Han var enkel og folkelig, og deltok ofte i vanlige folks liv.",
+"Han elsket ski og friluftsliv, akkurat som mange nordmenn.",
+
+"Han er kanskje mest kjent for sin tur med trikken under oljekrisen i 1973.",
+"Under krisen var det bilfrie dager for å kunne spare bensin, og kongen tok trikken i Oslo som alle andre.",
+"Han kjøpte billett og satt sammen med vanlige folk.",
+"Denne hendelsen gjorde ham enda mer populær og viste hans jordnære holdning.",
+
+"Kong Olav V var en elsket konge som satte stor pris på det norske folket.",
+"Han døde 17. januar 1991, men er fortsatt husket som “folkekongen”.",
+"Hans liv og handlinger er en viktig del av norsk historie og kulturarv."
+
 ];
 
 
 
-const startTimes2=[5,9,15,19,29,36,42,52,62,75,79,87,93,98,102,105,110,117,122,127,133,139,142,146,151,156,160,164,172,177,182];
-const vocabulary2 = [
+const startTimes4=[5,9,15,19,29,36,42,52,62,75,79,87,93,98,102,105,110,117,122,127,133,139,142,146,151,156,160,164,172,177,182];
+const vocabulary4 = [
   
 
 
-  /* Cabin Culture */
-  { word: 'hytte',              translation: 'cabin' },
-  { word: 'hyttetur',           translation: 'cabin trip' },
-  { word: 'hytteliv',           translation: 'cabin life' },
-  { word: 'hyttene',            translation: 'the cabins' },
-  { word: 'naturen',            translation: 'nature' },
-  { word: 'fjellene',           translation: 'the mountains' },
-  { word: 'sjøen',              translation: 'the sea' },
-  { word: 'øyer',               translation: 'islands' },
-  { word: 'gamle',              translation: 'old' },
-  { word: 'nye',                translation: 'new' },
-  { word: 'store',              translation: 'large' },
-  { word: 'små',                translation: 'small' },
-  { word: 'enkle',              translation: 'simple' },
-  { word: 'luksuriøse',         translation: 'luxurious' },
-  { word: 'kunstnere',          translation: 'artists' },
-  { word: 'forfattere',         translation: 'writers' },
-  { word: 'bønder',             translation: 'farmers' },
-  { word: 'jegere',             translation: 'hunters' },
-  { word: 'fiskere',            translation: 'fishermen' },
-  { word: 'avslappe',           translation: 'relax' },
-  { word: 'fredag',             translation: 'Friday' },
-  { word: 'søndag',             translation: 'Sunday' },
-  { word: 'påske',              translation: 'Easter' },
-  { word: 'jul',                translation: 'Christmas' },
-  { word: 'mai',                translation: 'May' },
-  { word: 'aktiviteter',        translation: 'activities' },
-  { word: 'gå tur',             translation: 'hiking' },
-  { word: 'fiske',              translation: 'fishing' },
-  { word: 'sykle',              translation: 'bike' },
-  { word: 'svømme',             translation: 'swim' },
-  { word: 'spille',             translation: 'play' },
-  { word: 'lese',               translation: 'read' },
-  { word: 'lage mat',           translation: 'cook food' },
-  { word: 'verdier',            translation: 'values' },
-  { word: 'familie',            translation: 'family' },
-  { word: 'seg selv',           translation: 'themselves' },
-  { word: 'kos',                translation: 'coziness' },
-  { word: 'fredelig',           translation: 'peaceful' },
-  { word: 'folk',               translation: 'people' },
-  { word: 'fjell',              translation: 'mountain' },
-  { word: 'natur',              translation: 'nature' }
+  /* Kong Olav V */
+{ word: 'Kong',               translation: 'King' },
+{ word: 'Olav',               translation: 'Olav' },
+{ word: 'V',                  translation: 'V' },
+{ word: 'ble',                translation: 'was' },
+{ word: 'født',               translation: 'born' },
+{ word: '2.',                 translation: '2nd' },
+{ word: 'juli',               translation: 'July' },
+{ word: '1903',               translation: '1903' },
+{ word: 'i',                  translation: 'in' },
+{ word: 'Storbritannia',      translation: 'Great Britain' },
+{ word: 'som',                translation: 'as' },
+{ word: 'prins',              translation: 'prince' },
+{ word: 'Alexander',          translation: 'Alexander' },
+{ word: 'Edward',             translation: 'Edward' },
+{ word: 'Christian',          translation: 'Christian' },
+{ word: 'Frederik',           translation: 'Frederik' },
+
+{ word: 'Han',                translation: 'He' },
+{ word: 'flyttet',            translation: 'moved' },
+{ word: 'til',                translation: 'to' },
+{ word: 'Norge',              translation: 'Norway' },
+{ word: 'med',                translation: 'with' },
+{ word: 'familien',           translation: 'the family' },
+{ word: 'i',                  translation: 'in' },
+{ word: '1905',               translation: '1905' },
+{ word: 'da',                 translation: 'when' },
+{ word: 'faren',              translation: 'the father' },
+{ word: 'hans',               translation: 'his' },
+{ word: 'Haakon',             translation: 'Haakon' },
+{ word: 'VII',                translation: 'VII' },
+{ word: 'ble',                translation: 'became' },
+{ word: 'konge',              translation: 'king' },
+{ word: 'av',                 translation: 'of' },
+
+{ word: 'Alexander',          translation: 'Alexander' },
+{ word: 'fikk',               translation: 'got/received' },
+{ word: 'navnet',             translation: 'the name' },
+{ word: 'Olav',               translation: 'Olav' },
+{ word: 'V',                  translation: 'V' },
+{ word: 'da',                 translation: 'when' },
+{ word: 'han',                translation: 'he' },
+{ word: 'ble',                translation: 'became' },
+{ word: 'kronprins',          translation: 'crown prince' },
+{ word: 'og',                 translation: 'and' },
+{ word: 'vokste',             translation: 'grew' },
+{ word: 'opp',                translation: 'up' },
+{ word: 'i',                  translation: 'in' },
+{ word: 'Norge',              translation: 'Norway' },
+
+{ word: 'Under',              translation: 'During' },
+{ word: 'andre',              translation: 'second' },
+{ word: 'verdenskrig',        translation: 'world war' },
+{ word: 'måtte',              translation: 'had to' },
+{ word: 'kongefamilien',      translation: 'the royal family' },
+{ word: 'flykte',             translation: 'flee' },
+{ word: 'fra',                translation: 'from' },
+{ word: 'Norge',              translation: 'Norway' },
+{ word: 'da',                 translation: 'when' },
+{ word: 'Tyskland',           translation: 'Germany' },
+{ word: 'invaderte',          translation: 'invaded' },
+{ word: 'landet',             translation: 'the country' },
+{ word: 'i',                  translation: 'in' },
+{ word: '1940',               translation: '1940' },
+
+{ word: 'Kongefamilien',      translation: 'The royal family' },
+{ word: 'og',                 translation: 'and' },
+{ word: 'regjeringen',        translation: 'the government' },
+{ word: 'var',                translation: 'were' },
+{ word: 'i',                  translation: 'in' },
+{ word: 'eksil',              translation: 'exile' },
+{ word: 'i',                  translation: 'in' },
+{ word: 'Storbritannia',      translation: 'Great Britain' },
+
+{ word: 'Mens',               translation: 'While' },
+{ word: 'han',                translation: 'he' },
+{ word: 'var',                translation: 'was' },
+{ word: 'i',                  translation: 'in' },
+{ word: 'England',            translation: 'England' },
+{ word: 'fortsatte',          translation: 'continued' },
+{ word: 'Olav',               translation: 'Olav' },
+{ word: 'V',                  translation: 'V' },
+{ word: 'å',                  translation: 'to' },
+{ word: 'kjempe',             translation: 'fight' },
+{ word: 'for',                translation: 'for' },
+{ word: 'å',                  translation: 'to' },
+{ word: 'frigjøre',           translation: 'liberate' },
+{ word: 'Norge',              translation: 'Norway' },
+{ word: 'sammen',             translation: 'together' },
+{ word: 'med',                translation: 'with' },
+{ word: 'sin',                translation: 'his' },
+{ word: 'far',                translation: 'father' },
+
+// ... (continues with the rest of the text about war, becoming king, oil crisis, trikken, "folkekongen", and death in 1991)
+
 
 
 ];
 
 /**************  DOM  ****************/ 
-const segments2 = Array.from(document.querySelectorAll('#storyText2 span'));
-const toast2 = document.getElementById('toast2');
-const audio2 = document.getElementById('storyAudio2');
-const wordBtn2 = document.getElementById('wordModeBtn2');
+const segments4 = Array.from(document.querySelectorAll('#storyText4 span'));
+const toast4 = document.getElementById('toast4');
+const audio4 = document.getElementById('storyAudio4');
+const wordBtn4 = document.getElementById('wordModeBtn4');
 
 /**************  STATE  ****************/ 
-let readingIndex2=0;
-let wordMode2=false;
+let readingIndex4=0;
+let wordMode4=false;
 
 /**************  AUDIO PLAYBACK (variable2)  ****************/ 
-function clearHighlight2() {
-  segments2.forEach(s => s.classList.remove('highlight'));
+function clearHighlight4() {
+  segments4.forEach(s => s.classList.remove('highlight'));
 }
 
-function handleTimeUpdate2() {
-  if (wordMode2) return; // ignore in word mode
-  const cur = audio2.currentTime;
-  const idx = startTimes2.findIndex((s, i) => cur >= s && (i === startTimes2.length - 1 || cur < startTimes2[i + 1]));
-  if (idx !== -1 && idx !== readingIndex2) {
-    clearHighlight2();
-    segments2[idx].classList.add('highlight');
-    toast2.textContent = translations2[idx];
-    toast2.style.display = 'block';
-    readingIndex2 = idx;
+function handleTimeUpdate4() {
+  if (wordMode4) return; // ignore in word mode
+  const cur = audio4.currentTime;
+  const idx = startTimes4.findIndex((s, i) => cur >= s && (i === startTimes4.length - 1 || cur < startTimes2[i + 1]));
+  if (idx !== -1 && idx !== readingIndex4) {
+    clearHighlight4();
+    segments4[idx].classList.add('highlight');
+    toast4.textContent = translations4[idx];
+    toast4.style.display = 'block';
+    readingIndex4 = idx;
   }
 }
-audio2.addEventListener('timeupdate', handleTimeUpdate2);
-audio2.addEventListener('ended', () => {
-  clearHighlight2();
-  toast2.style.display = 'none';
-  readingIndex2 = 0;
+audio4.addEventListener('timeupdate', handleTimeUpdate4);
+audio4.addEventListener('ended', () => {
+  clearHighlight4();
+  toast4.style.display = 'none';
+  readingIndex4 = 0;
 });
 
-function playStory2() {
-  exitWordMode2(); // exit word mode if active
-  audio2.currentTime = startTimes2[readingIndex2];
-  audio2.play();
-  highlightCurrentSentence2(); // manually highlight on play
+function playStory4() {
+  exitWordMode4(); // exit word mode if active
+  audio4.currentTime = startTimes4[readingIndex4];
+  audio4.play();
+  highlightCurrentSentence4(); // manually highlight on play
 }
-function highlightCurrentSentence2() {
-  clearHighlight2();
-  segments2[readingIndex2].classList.add('highlight');
-  toast2.textContent = translations2[readingIndex2];
-  toast2.style.display = 'block';
+function highlightCurrentSentence4() {
+  clearHighlight4();
+  segments4[readingIndex4].classList.add('highlight');
+  toast4.textContent = translations4[readingIndex4];
+  toast4.style.display = 'block';
 }
 
-function pauseStory2() {
-  audio2.pause();
-  toast2.style.display = 'none';
-  clearHighlight2();
+function pauseStory4() {
+  audio4.pause();
+  toast4.style.display = 'none';
+  clearHighlight4();
 }
 /**************  SEGMENT CLICK – sentence playback (story2) ****************/
-segments2.forEach((segment, idx) => {
+segments4.forEach((segment, idx) => {
   segment.style.cursor = 'pointer';
   segment.addEventListener('click', () => {
-    readingIndex2 = idx;
-    audio2.currentTime = startTimes2[idx];
+    readingIndex4 = idx;
+    audio4.currentTime = startTimes4[idx];
 
     // Highlight immediately on click
-    clearHighlight2();
-    segments2[idx].classList.add('highlight');
+    clearHighlight4();
+    segments4[idx].classList.add('highlight');
 
     // Show translation immediately
-    toast2.textContent = translations2[idx];
-    toast2.style.display = 'block';
+    toast4.textContent = translations4[idx];
+    toast4.style.display = 'block';
 
-    playStory2();
+    playStory4();
   });
 });
-function toggleWordMode2() {
-  wordMode2 ? exitWordMode2() : enterWordMode2();
+function toggleWordMode4() {
+  wordMode4 ? exitWordMode4() : enterWordMode4();
 }
 
-function enterWordMode2() {
-  wordMode2 = true;
-  wordBtn2.textContent = 'Exit Word Mode';
-  pauseStory2();
-  toast2.style.display = 'none';
+function enterWordMode4() {
+  wordMode4 = true;
+  wordBtn4.textContent = 'Exit Word Mode';
+  pauseStory4();
+  toast4.style.display = 'none';
 
   // wrap every word in each sentence with span.word
-  segments2.forEach(seg => {
+  segments4.forEach(seg => {
     const words = seg.textContent.split(/(\s+)/); // keep spaces
     seg.innerHTML = words.map(w => /\s+/.test(w) ? w : `<span class='word'>${w}</span>`).join('');
     seg.querySelectorAll('span.word').forEach(wspan => {
       wspan.style.cursor = 'pointer';
-      wspan.addEventListener('click', wordClickHandler2);
+      wspan.addEventListener('click', wordClickHandler4);
     });
   });
 }
-function exitWordMode2() {
-  if (!wordMode2) return;
-  wordMode2 = false;
-  wordBtn2.textContent = 'Word Translation Mode';
-  toast2.style.display = 'none';
+function exitWordMode4() {
+  if (!wordMode4) return;
+  wordMode4 = false;
+  wordBtn4.textContent = 'Word Translation Mode';
+  toast4.style.display = 'none';
 
   // restore original text (remove inner spans)
-  segments2.forEach((seg, i) => {
+  segments4.forEach((seg, i) => {
     seg.textContent = seg.innerText;
   });
 
-  clearHighlight2();
+  clearHighlight4();
 }
-function wordClickHandler2(e) {
+function wordClickHandler4(e) {
   e.stopPropagation();
-  clearHighlight2();
+  clearHighlight4();
 
   const span = e.target;
   span.classList.add('highlight');
 
-  // Clean the word and look up in vocabulary2
+  // Clean the word and look up in vocabulary4
   const clean = span.textContent.toLowerCase().replace(/[^a-zæøåA-ZÆØÅ]/g, '');
-  const entry = vocabulary2.find(v => v.word.toLowerCase() === clean);
-  toast2.textContent = entry ? `${entry.word} = ${entry.translation}` : 'Translation not available';
-  toast2.style.display = 'block';
+  const entry = vocabulary4.find(v => v.word.toLowerCase() === clean);
+  toast4.textContent = entry ? `${entry.word} = ${entry.translation}` : 'Translation not available';
+  toast4.style.display = 'block';
 
   // ▶️ Play the sentence that contains the clicked word
   const parentSegment = span.closest('span');
-  const idx = segments2.indexOf(parentSegment);
+  const idx = segments4.indexOf(parentSegment);
   if (idx !== -1) {
-    readingIndex2 = idx;
-    audio2.currentTime = startTimes2[idx];
-    audio2.play();
+    readingIndex4 = idx;
+    audio4.currentTime = startTimes4[idx];
+    audio4.play();
   }
 }
-/**************  FLASH‑CARD MODE – STORY 2 ****************/
-const flashcard2 = document.getElementById('flashcard2');
-const flashcardContent2 = document.getElementById('flashcardContent2');
-let currentWordIdx2 = 0;
+/**************  FLASH‑CARD MODE – STORY 4 ****************/
+const flashcard4 = document.getElementById('flashcard4');
+const flashcardContent4 = document.getElementById('flashcardContent4');
+let currentWordIdx4 = 0;
 
-function startVocabMode2() {
-  exitWordMode2(); // Make sure word mode is off
-  flashcard2.style.display = 'flex';
-  currentWordIdx2 = 0;
-  updateFlashcard2();
+function startVocabMode4() {
+  exitWordMode4(); // Make sure word mode is off
+  flashcard4.style.display = 'flex';
+  currentWordIdx4 = 0;
+  updateFlashcard4();
 }
 
-function updateFlashcard2() {
-  flashcardContent2.textContent = vocabulary2[currentWordIdx2].word;
-  flashcardContent2.dataset.side = 'word';
+function updateFlashcard4() {
+  flashcardContent4.textContent = vocabulary4[currentWordIdx4].word;
+  flashcardContent4.dataset.side = 'word';
 }
 
-function revealMeaning2() {
-  if (flashcardContent2.dataset.side === 'word') {
-    flashcardContent2.textContent = vocabulary2[currentWordIdx2].translation;
-    flashcardContent2.dataset.side = 'translation';
+function revealMeaning4() {
+  if (flashcardContent4.dataset.side === 'word') {
+    flashcardContent4.textContent = vocabulary4[currentWordIdx4].translation;
+    flashcardContent4.dataset.side = 'translation';
   } else {
-    updateFlashcard2();
+    updateFlashcard4();
   }
 }
 
-function nextWord2() {
-  currentWordIdx2 = (currentWordIdx2 + 1) % vocabulary2.length;
-  updateFlashcard2();
+function nextWord4() {
+  currentWordIdx4 = (currentWordIdx4 + 1) % vocabulary4.length;
+  updateFlashcard4();
 }
 
-function prevWord2() {
-  currentWordIdx2 = (currentWordIdx2 - 1 + vocabulary2.length) % vocabulary2.length;
-  updateFlashcard2();
+function prevWord4() {
+  currentWordIdx4 = (currentWordIdx4 - 1 + vocabulary4.length) % vocabulary4.length;
+  updateFlashcard4();
 }
 
-function closeFlashcard2() {
-  flashcard2.style.display = 'none';
+function closeFlashcard4() {
+  flashcard4.style.display = 'none';
 }
 
-f/**************  MODAL – STORY 2 ****************/
-function showDialog2() {
-  document.getElementById('overlay2').style.display = 'block';
-  document.getElementById('storyDialog2').style.display = 'block';
+/**************  MODAL – STORY2 ****************/
+function showDialog4() {
+  document.getElementById('overlay4').style.display = 'block';
+  document.getElementById('storyDialog4').style.display = 'block';
 }
 
-function closeDialog2() {
-  pauseStory2();             // stop audio & highlight
-  exitWordMode2();           // reset word mode
-  flashcard2.style.display = 'none';
-  document.getElementById('overlay2').style.display = 'none';
-  document.getElementById('storyDialog2').style.display = 'none';
+function closeDialog4() {
+  pauseStory4();             // stop audio & highlight
+  exitWordMode4();           // reset word mode
+  flashcard4.style.display = 'none';
+  document.getElementById('overlay4').style.display = 'none';
+  document.getElementById('storyDialog4').style.display = 'none';
 }
 
 // Close modal on backdrop click
-document.getElementById('overlay2').addEventListener('click', closeDialog2);
+document.getElementById('overlay4').addEventListener('click', closeDialog4);
