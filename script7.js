@@ -100,7 +100,7 @@ function clearHighlight7() {
   segments7.forEach(s => s.classList.remove('highlight'));
 }
 
-function handleTimeUpdate() {
+function handleTimeUpdate7() {
   if (wordMode7) return; // ignore in word mode
   const cur = audio7.currentTime;
   const idx = startTimes7.findIndex((s, i) => cur >= s && (i === startTimes7.length - 1 || cur < startTimes7[i + 1]));

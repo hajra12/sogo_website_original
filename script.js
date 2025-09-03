@@ -383,6 +383,8 @@ function closeDialog(){
   pauseStory();              // stop audio & highlight
   exitWordMode();            // make sure word mode is reset
   flashcard.style.display='none';
+  document.getElementById('flashcard7').style.display = 'none';
+
   document.getElementById('overlay').style.display='none';
   document.getElementById('storyDialog').style.display='none';
 }
