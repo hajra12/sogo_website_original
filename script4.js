@@ -111,6 +111,7 @@ audio2.addEventListener('ended', () => {
   readingIndex2 = 0;
 });
 
+
 function playStory2() {
   exitWordMode2(); // exit word mode if active
   audio2.currentTime = startTimes2[readingIndex2];
