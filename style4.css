@@ -131,4 +131,9 @@
   text-align: center;
   z-index: 1100; /* above dialog(1000)/overlay(999) */
   font-size: .95rem;
+}@media (max-width:600px){
+  .dialog-4{
+    width:90vw;          /* almost full-width */
+    max-width:none;      /* ignore the 650 px cap */
+  }
 }

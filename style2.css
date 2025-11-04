@@ -131,3 +131,9 @@
   opacity: 1;
   pointer-events: auto;
 }
+@media (max-width:600px){
+  .dialog-2{
+    width:90vw;          /* almost full-width */
+    max-width:none;      /* ignore the 650 px cap */
+  }
+}
