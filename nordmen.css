@@ -115,7 +115,12 @@
   background: #fff3cd; /* soft yellow */
   transition: background .2s ease;
 }
-
+@media (max-width:600px){
+  .dialog-3{
+    width:90vw;          /* almost full-width */
+    max-width:none;      /* ignore the 650 px cap */
+  }
+}
 /* Floating translation toast */
 .toast-3 {
   display: none;
